@@ -9,5 +9,8 @@ let final = new Schema({
     },
     verifyPassword: {
         type: String
+    },
+     accountType: {
+        type: String
     }
 });
