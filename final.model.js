@@ -17,3 +17,4 @@ let final = new Schema({
         type: String
     }
 });
+module.exports = mongoose.model('Final', final);
