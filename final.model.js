@@ -6,5 +6,8 @@ let final = new Schema({
     }, 
     email: {
         type: String
-    } //add comma here for more
+    },
+    verifyPassword: {
+        type: String
+    }
 });
