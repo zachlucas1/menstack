@@ -13,3 +13,12 @@ const connection = mongoose.connection;
 connection.once('open', function() {
     console.log("MongoDB database connection established successfully");
 })
+finalRoutes.get('/',function(req, res) {
+    final_model.find(function(err, finals) {
+        if (err) {
+            console.log(err);
+        } else {
+            res.json(finals);
+        }
+    });
+});
