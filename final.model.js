@@ -12,5 +12,8 @@ let final = new Schema({
     },
      accountType: {
         type: String
+    },
+     phone: {
+        type: String
     }
 });
