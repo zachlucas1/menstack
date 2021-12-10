@@ -22,3 +22,15 @@ finalRoutes.get('/',function(req, res) {
         }
     });
 });
+
+finalRoutes.post('/add', function(req, res) {
+    final = new final_model(req.body);
+    console.log("Request Body", JSON.stringify(req.body))
+    final.save()
+        .then(final => {
+            res.status(200).json({'final': 'final added successfully'});
+        })
+        .catch(err => {
+            res.status(400).send('adding new final failed');
+        });
+});
