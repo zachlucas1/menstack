@@ -34,3 +34,16 @@ finalRoutes.post('/add', function(req, res) {
             res.status(400).send('adding new final failed');
         });
 });
+
+finalRoutes.post('/:userName', function(req, res) {
+    let {userName, password} = req.body;
+    final_model.findOne({ userName: userName}, function(err, final) {
+        if (!final_model) {
+            return res.status(404).json({
+              errors: [{ user: "not found" }],
+            });
+          } else 
+            res.json(final.id);
+    });
+});
+
