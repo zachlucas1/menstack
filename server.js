@@ -47,3 +47,7 @@ finalRoutes.post('/:userName', function(req, res) {
     });
 });
 
+app.use('/finals', finalRoutes);
+app.listen(PORT, function() {
+    console.log("Server is running on Port: " + PORT);
+});
