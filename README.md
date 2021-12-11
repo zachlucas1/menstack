@@ -1,7 +1,7 @@
 # menstack
 Pitch58 repository for our group API we made in Fall 2021. CIT270 
 
-This method is for windows users
+For additional MAC steps and troubleshooting, see the end of README file
 
 Download and install Node.js
 
@@ -39,6 +39,11 @@ Switch to Postman and create the following requests verbatim:
 https://docs.google.com/document/d/1DyyoUDnGobmcsKBum_dutnuyZvyaFDx0xtRcZDFARNI/edit?usp=sharing
 
 (the /finals/add will sign up a user into the DB, the /finals get request will get all user information in the database, and the /finals/username will return the users UUID with the provided username and password)
+
+For MAC users
+Most steps will be the same, however, when using mongod, mongo, or mongosh.exe to connect the database; there are times where you may experience connection errors. In this case run the following commands: brew services stop mongodb-community@5.0, then run: brew services start mongodb-community@5.0
+
+If you experience any others errors or issues, please reach out to us so we can ensure that the API works as expected! :)
 
 
 
