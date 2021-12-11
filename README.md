@@ -16,6 +16,9 @@ $ npm install -g nodemon
 You need a js file named final-server.js
 
 Start the server by using nodemon and check tthe running on PORT: 4000
-$ nodemon final-server
+$ nodemon final-server.js
 
 Download MongoDB from here (Make sure download community Edition), https://docs.mongodb.com/manual/installation/
+
+Now we’re ready to start up MongoDB by executing the following command:
+$ mongod
