@@ -13,7 +13,7 @@ $ npm install express body-parser cors mongoose
 Install a global package by executing the following command:
 $ npm install -g nodemon
 
-You need a js file named server-final.js
+You need a js file named final-server.js
 
 Start the server by using nodemon and check tthe running on PORT: 4000
 $ nodemon final-server
